@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/view_backgroud_shape"
+    android:orientation="horizontal"
+    android:padding="@dimen/hohels_activity_padding" >
+
+    <ImageView
+        android:id="@+id/game_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/game_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_launcher" />
+    <TextView
+        android:id="@+id/game_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/game_logo"
+        android:layout_toRightOf="@id/game_logo"
+        android:text="金山电池卫士" />
+
+    <TextView
+        android:id="@+id/game_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/game_logo"
+        android:layout_below="@id/game_name"
+        android:layout_toLeftOf="@id/game_download"
+        android:layout_toRightOf="@id/game_logo"
+        android:gravity="bottom"
+        android:singleLine="true"
+        android:text="海量应用游戏想下就下，免费。。海量应用游戏想下就下，免费。。" />
+
+</RelativeLayout>

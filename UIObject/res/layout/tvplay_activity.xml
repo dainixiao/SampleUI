@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/view_backgroud_shape"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="3" >
+
+        <TextView
+            android:id="@+id/tvplay_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="一座城池"
+            android:textSize="@dimen/hotles_story_name_size" />
+
+        <TextView
+            android:id="@+id/tvplay_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvplay_name"
+            android:text="类型:"
+            android:textSize="@dimen/hotles_story_name_size" />
+
+        <TextView
+            android:id="@+id/tvplay_type_name"
+            style="@style/tvplay_type_grad_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tvplay_type"
+            android:layout_toRightOf="@id/tvplay_type"
+            android:text="剧情" />
+
+        <TextView
+            android:id="@+id/tvplay_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvplay_type"
+            android:text="评分："
+            android:textSize="@dimen/hotles_story_name_size" />
+
+        <TextView
+            android:id="@+id/tvplay_grade_name"
+            style="@style/tvplay_type_grad_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tvplay_grade"
+            android:layout_toRightOf="@id/tvplay_grade"
+            android:text="9.0"
+            android:textColor="@color/food_price_color" />
+    </RelativeLayout>
+
+</LinearLayout>

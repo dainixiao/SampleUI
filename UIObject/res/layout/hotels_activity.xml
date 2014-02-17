@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/view_backgroud_shape"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:padding="@dimen/hotles_right_padding" >
+
+        <TextView
+            android:id="@+id/hotles_story_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hotles_story_name"
+            android:textSize="@dimen/hotles_story_name_size" />
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/hotles_story_name"
+            android:layout_below="@+id/hotles_story_name" />
+
+        <TextView
+            android:id="@+id/totles_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ratingBar1"
+            android:layout_toRightOf="@id/ratingBar1"
+            android:text="人均：" />
+
+        <TextView
+            android:id="@+id/totles_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/totles_people"
+            android:layout_toRightOf="@id/totles_people"
+            android:text="$12.0" />
+
+        <TextView
+            android:id="@+id/totles_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ratingBar1"
+            android:layout_below="@id/ratingBar1"
+            android:text="世纪公园南路 粤菜" />
+
+        <TextView
+            android:id="@+id/totles_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/totles_address"
+            android:layout_toRightOf="@id/totles_address"
+            android:text=" 22KM" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/totles_distance"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hotel_tel" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dip"
+                    android:text="电话" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hotel_navigation" />
+
+                <TextView
+                    style="@style/hotel_tel_nav_padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="导航" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

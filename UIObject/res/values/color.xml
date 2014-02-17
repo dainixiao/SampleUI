@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="movie_text_color">#19A0A3</color>
+    <color name="food_price_color">#FE7800</color>
+    <color name="commom_title">#16A1A4</color>
+	<color name="more_backg">#F0F0F0</color>
+</resources>

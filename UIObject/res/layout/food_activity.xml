@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/view_backgroud_shape"
+    android:gravity="left"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="@dimen/hohels_activity_padding" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="新石器烤肉"
+            android:textSize="@dimen/hotles_story_name_size" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/hohels_activity_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="$80"
+                android:textColor="@color/food_price_color"
+                android:textSize="@dimen/food_price__size" />
+
+            <TextView
+                android:id="@+id/foods_no_price"
+                style="?android:attr/textAppearanceLargeInverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="$120" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/foods_no_price"
+                android:layout_alignParentRight="true"
+                android:text="23km"
+                android:textColor="@color/movie_text_color" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仅售80元，价值100元现金劵!多城多店通用，丸带来专家极致美味，无需预订，全场通用。" />
+    </LinearLayout>
+
+</LinearLayout>

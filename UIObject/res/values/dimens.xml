@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="hohels_activity_padding">10dip</dimen>
+    <dimen name="hotles_right_padding">5dip</dimen>
+    <dimen name="hotles_story_name_size">20sp</dimen>
+    <dimen name="movie_tv_padding_left">5dip</dimen>
+    <dimen name="diet_tv_padding_right">10dip</dimen>
+    <dimen name="food_price__size">30dip</dimen>
+    <dimen name="starsign_tv_size">15dip</dimen>
+    <dimen name="tvplay_type_size">15dip</dimen>
+
+</resources>

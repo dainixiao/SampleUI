@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/view_backgroud_shape"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="白羊座"
+        android:textSize="@dimen/hotles_story_name_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2013年12月12日"
+        android:textSize="@dimen/hotles_story_name_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/starsign_context"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/starsign_tv_size" />
+
+</LinearLayout>

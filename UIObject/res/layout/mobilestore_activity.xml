@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/view_backgroud_shape"
+    android:orientation="horizontal"
+    android:padding="@dimen/hohels_activity_padding" >
+
+    <ImageView
+        android:id="@+id/mobilestore_image"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="3" >
+
+        <TextView
+            android:id="@+id/mobilestore_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="iphone 5s"
+            android:textSize="@dimen/hotles_story_name_size" />
+
+        <TextView
+            android:id="@+id/mobilesstore_price"
+            style="@style/mobilestory_tv_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mobilestore_name"
+            android:text="$4600" />
+
+        <TextView
+            android:id="@+id/mobilesstore_turnover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mobilesstore_price"
+            android:text="成交量:" />
+
+        <TextView
+            android:id="@+id/mobilesstore_turnover_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/mobilesstore_turnover"
+            android:layout_toRightOf="@id/mobilesstore_turnover"
+            android:paddingLeft="@dimen/movie_tv_padding_left"
+            android:text="233件" />
+    </RelativeLayout>
+
+</LinearLayout>

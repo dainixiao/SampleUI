@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/view_backgroud_shape" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@drawable/e_coupon_up"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/hohels_activity_padding"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            style="@style/diet_tv_gravity"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="东方亚克西" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@drawable/e_coupon_down"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/diet_tv_gravity"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="加十元就送是水水水水" />
+
+        <TextView
+            style="@style/diet_tv_distance"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="26KM" />
+    </LinearLayout>
+
+</LinearLayout>
